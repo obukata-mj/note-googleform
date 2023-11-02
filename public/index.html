@@ -16,7 +16,18 @@
 
   <div class="max-w-[1216px] mx-auto py-14 space-y-8">
     <h2 class="text-2xl font-bold">新着情報</h2>
-    <div id="post" class="grid grid-cols-3 gap-8"></div>
+    <div id="post" class="grid grid-cols-3 gap-8">
+      <!-- <div>
+        <div class="rounded-lg overflow-hidden aspect-[384/256] border"><img class="w-full h-full object-cover" src="${post.eyecatch}" alt=""></div>
+        <div class="mt-8">
+          <a class="hover:opacity-70 block" href="${post.noteUrl}" target="_blank">
+            <time datatime="" class="text-xs text-gray-500 leading-6">${dayjs(post.publishAt).format('YYYY年M月D日')}</time>
+            <p class="font-bold text-lg mt-3 leading-6">${post.name}</p>
+            <p class="text-sm text-gray-600 mt-5 leading-6">${post.body}</p>
+          </a>
+        </div>
+      </div> -->
+    </div>
   </div>
 
   <div class="max-w-[1216px] mx-auto py-14 space-y-8">
