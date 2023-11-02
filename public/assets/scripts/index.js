@@ -21,6 +21,7 @@ const connectNote = () => {
     document.querySelector('#post').insertAdjacentHTML('afterbegin', data)
   })
 }
+connectNote()
 
 /**
  * connectGoogleForm
@@ -32,3 +33,4 @@ const connectGoogleForm = () => {
     window.location.href = '/thanks.html'
   })
 }
+connectGoogleForm()
