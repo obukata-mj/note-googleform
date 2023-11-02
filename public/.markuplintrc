@@ -1,0 +1,47 @@
+{
+  "nodeRules": [
+    {
+      "selector": "meta[property]",
+      "rules": {
+        "invalid-attr": {
+          "options": {
+            "attrs": {
+              "property": {
+                "type": "Any"
+              },
+              "content": {
+                "type": "Any"
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "rules": {
+    "invalid-attr": {
+      "options": {
+        "attrs": {
+          "vocab": {
+            "type": "URL"
+          },
+          "typeof": {
+            "type": "Any"
+          },
+          "property": {
+            "type": "Any"
+          },
+          "resource": {
+            "type": "Any"
+          },
+          "prefix": {
+            "type": "Any"
+          }
+        }
+      }
+    }
+  },
+  "extends": [
+    "markuplint:recommended"
+  ]
+}
