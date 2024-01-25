@@ -1,13 +1,9 @@
-<?php
-  include_once($_SERVER['DOCUMENT_ROOT']."/../config/snip/noteapi.php");
-?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <?php echo "<script>const noteData = ".$json."</script>" ?>
   <link rel="stylesheet" href="/assets/styles/main.css">
   <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.10/dayjs.min.js"></script>
   <script src="/assets/scripts/index.js" defer></script>
@@ -15,8 +11,13 @@
 <body class="px-6">
 
   <div class="max-w-[1216px] mx-auto py-14 space-y-8">
-    <h2 class="text-2xl font-bold">新着情報</h2>
-    <div id="post" class="grid grid-cols-3 gap-8"></div>
+    <h2 class="text-2xl font-bold">お知らせの一覧（サムネイルなし）</h2>
+    <div id="textNote"></div>
+  </div>
+
+  <div class="max-w-[1216px] mx-auto py-14 space-y-8">
+    <h2 class="text-2xl font-bold">お知らせの一覧（サムネイルあり）</h2>
+    <div id="thumbnailNote"></div>
   </div>
 
 </body>
